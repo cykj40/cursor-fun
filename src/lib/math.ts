@@ -1,14 +1,14 @@
-export const add = (a: number, b: number): number => a + b;
+export const add = (x: number, y: number): number => x + y;
 
-export const subtract = (a: number, b: number): number => a - b;
+export const subtract = (x: number, y: number): number => x - y;
 
-export const multiply = (a: number, b: number): number => a * b;
+export const multiply = (x: number, y: number): number => x * y;
 
-export const divide = (a: number, b: number): number => {
-  if (b === 0) {
+export const divide = (x: number, y: number): number => {
+  if (y === 0) {
     throw new Error('Cannot divide by zero');
   }
-  return a / b;
+  return x / y;
 };
 
 export const percentage = (value: number): number => value / 100;
